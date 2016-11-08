@@ -113,15 +113,17 @@ Create the Opbeat configuration file (``config/opbeat.php``):
 ```php
 <?php
 
-return array(
-    'dsn' => '___DSN___',
+return [
+    /*
+    |--------------------------------------------------------------------------
+    | Set up exception tracker https://opbeat.com/
+    |--------------------------------------------------------------------------
+    */
 
-    // capture release as git sha
-    // 'release' => trim(exec('git log --pretty="%h" -n1 HEAD')),
-
-    // Capture bindings on SQL queries
-    'breadcrumbs.sql_bindings' => true,
-);
+    'app_id' => env('OPBEAT_APP_ID', ''),
+    'organization_id' => env('OPBEAT_ORGANIZATION_ID', ''),
+    'access_token' => env('OPBEAT_ACCESS_TOKEN', ''),
+];
 ```
 
 ## Contributing
