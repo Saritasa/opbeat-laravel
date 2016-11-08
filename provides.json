@@ -1,0 +1,11 @@
+{
+  "providers": [
+    "Opbeat\OpbeatLaravel\OpbeatLaravelServiceProvider"
+  ],
+  "aliases": [
+    {
+      "alias": "Opbeat",
+      "facade": "Opbeat\OpbeatLaravel\OpbeatFacade"
+    }
+  ]
+}

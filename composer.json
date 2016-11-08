@@ -1,0 +1,33 @@
+{
+    "name": "saritasa/opbeat-laravel",
+    "type": "library",
+    "description": "Laravel integration for Opbeat (https://opbeat.com)",
+    "keywords": ["logging", "errors", "laravel", "opbeat"],
+    "homepage": "https://opbeat.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Populov",
+            "email": "sergey@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "4.*|5.*",
+        "madsleejensen/opbeat-php": "^2.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^1.8.0",
+        "phpunit/phpunit": "^4.6.6"
+    },
+    "autoload": {
+        "psr-0" : {
+            "Opbeat\\OpbeatLaravel\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
