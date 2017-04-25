@@ -31,7 +31,7 @@ Add Opbeat reporting to ``App/Exceptions/Handler.php``:
 public function report(Exception $e)
 {
     if ($this->shouldReport($e)) {
-        app('opbeat')->captureException($e);
+        app('opbeat')->catchException($e);
     }
     parent::report($e);
 }
