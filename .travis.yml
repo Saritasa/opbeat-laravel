@@ -17,11 +17,10 @@ cache:
   directories:
     - $HOME/.composer/cache
 
-before_install:
-  - composer self-update
-
-install: travis_retry composer install --no-interaction --prefer-source
+install:
+  - composer install --no-interaction --prefer-source
 
 script:
+  - vendor/bin/phpcs
   - vendor/bin/php-cs-fixer fix --config-file=.php_cs --verbose --diff --dry-run
   - vendor/bin/phpunit

@@ -22,9 +22,9 @@ class OpbeatLaravelServiceProvider extends ServiceProvider
     public function boot()
     {
         // the default configuration file
-        $this->publishes(array(
+        $this->publishes([
             __DIR__ . '/config.php' => config_path('opbeat.php'),
-        ), 'config');
+        ], 'config');
     }
 
     /**
@@ -47,6 +47,6 @@ class OpbeatLaravelServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('opbeat');
+        return ['opbeat'];
     }
 }

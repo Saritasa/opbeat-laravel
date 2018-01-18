@@ -44,6 +44,6 @@ class OpbeatLumenServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('opbeat');
+        return ['opbeat'];
     }
 }

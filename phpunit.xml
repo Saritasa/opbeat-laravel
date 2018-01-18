@@ -8,11 +8,11 @@
          processIsolation="false"
          stopOnFailure="false"
          syntaxCheck="false"
-         bootstrap="test/bootstrap.php"
+         bootstrap="tests/bootstrap.php"
 >
   <testsuites>
     <testsuite name="Opbeat Test Suite">
-      <directory>./test/Opbeat/</directory>
+      <directory>./tests/Opbeat/</directory>
     </testsuite>
   </testsuites>
 
